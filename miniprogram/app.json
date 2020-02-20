@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "page/index",
+    "page/group/creatGroup",
+    "page/groupRes/groupRes",
+    "page/group/group",
+    "page/my/myCenter",
+    "page/aim/setAim",
+    "page/run/run",
+    "page/app/app",
+    "page/history/history",
+    "page/run/ballGame",
+    "page/ball/ball"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "即刻校园GO",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序将获得您的位置信息" 
+    }
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#07c160",
+    "backgroundColor": "#f7f7f7",
+    "list": [
+      {
+        "pagePath": "page/index",
+        "iconPath": "images/tabbar/go.png",
+        "selectedIconPath": "images/tabbar/go_.png",
+        "text": "健走"
+      },
+      {
+        "pagePath": "page/ball/ball",
+        "iconPath": "images/tabbar/ball.png",
+        "selectedIconPath": "images/tabbar/ball_.png",
+        "text": "球类"
+      },
+      {
+        "pagePath": "page/my/myCenter",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my_.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

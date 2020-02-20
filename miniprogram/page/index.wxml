@@ -1,0 +1,16 @@
+<view class="page">
+   <view class="page__hd" >
+        <view class="page__title">健走跑步模式</view>
+        <view class="page__desc">该模式以运动距离作为量化，但并不设定最低单次里程，同时我们也对各个配速做出了不同的界定并设置了相应的分数奖励，既鼓励身体素质较好的同学挑战自己，也对基础不好的同学十分友好。</view>
+    </view>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location>
+  <cover-view class="mp">
+    <cover-view class="page__bd page__bd_spacing">
+      <button class="weui-btn" bindtap="startRun" type="primary">开始跑步</button>
+      <button class="weui-btn" bindtap="creatGroup" type="primary">组队跑步</button>
+    </cover-view>
+  </cover-view>
+  </map>
+  
+</view>
+
