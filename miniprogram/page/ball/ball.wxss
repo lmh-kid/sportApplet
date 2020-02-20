@@ -1,8 +1,0 @@
-/* page/ball/ball.wxss */
-map{
-  width: 100%;
-  height:700px;
-}
-.mp{
-  margin-top: 300rpx;
-}
