@@ -1,0 +1,36 @@
+<!--page/group/creatGroup.wxml-->
+<view class="page">
+   <view class="page__hd">
+      <view class="page__title">发起人</view>
+  </view>
+  <view class="page__bd">
+    <view class="kind-list__item">
+        <view class="weui-flex kind-list__item-hd">
+          <view class="weui-cell__bd"><image class="userHead" src="{{msrc}}"></image></view>
+          <view class="weui-cell__bd">{{ mainUserName }}</view>
+          <view class="weui-cell__bd"></view>
+      </view>
+    </view>
+    <view class="page__hd">
+      <view class="page__title">参与人</view>
+    </view>
+    <block wx:for="{{userlist}}">
+      <view class="kind-list__item">
+        <view class="weui-flex kind-list__item-hd">
+          <view class="weui-cell__bd"><image class="userHead" src="{{item.userInfo.avatarUrl}}"></image></view>
+          <view class="weui-cell__bd">{{item.userInfo.nickName}}</view>
+          <view class="weui-cell__bd"></view>
+      </view>
+      </view>
+    </block>
+    <!-- 底部操作 -->
+    <view wx:if="{{ifMain}}">
+      <button class="weui-btn" bindtap="startRun" type="primary">开始跑步</button>
+      <button class="weui-btn" bindtap="notRun" type="warn">解散队伍</button>
+    </view>
+    <view wx:else>
+      <button class="weui-btn" bindtap="levelGroup" type="primary">离开队伍</button>
+    </view>
+    
+  </view>
+</view>
