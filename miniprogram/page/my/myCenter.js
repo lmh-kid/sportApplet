@@ -11,11 +11,11 @@ Page({
         name: '运动记录',
         action:'history'
       },
-      // {
-      //   id: 'search',
-      //   name: '搜索相关',
-      //   action: '运动记录'
-      // },
+      {
+        id: 'place',
+        name: '场地预约',
+        action: 'getPlace'
+      },
       // {
       //   id: 'school',
       //   name: '所在学校',
@@ -40,7 +40,11 @@ Page({
   onShow:function(){
     this.getUserTeamAim();
   },
-
+  getPlace:function(){
+    wx.navigateTo({
+      url: '../place/place',
+    })
+  },
   getUserTeamAim:function(){
     console.log(app.getTeamId());
     wx.cloud.callFunction({

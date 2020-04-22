@@ -8,6 +8,7 @@
     "page/aim/setAim",
     "page/run/run",
     "page/app/app",
+    "page/place/place",
     "page/history/history",
     "page/run/ballGame",
     "page/ball/ball"

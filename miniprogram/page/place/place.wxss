@@ -1,0 +1,4 @@
+/* page/place/place.wxss */
+.weui-form-preview{
+  margin-bottom: 25px;
+}
