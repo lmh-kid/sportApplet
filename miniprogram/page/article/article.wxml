@@ -1,0 +1,26 @@
+<!--page/article/article.wxml-->
+<!-- 便签 -->
+<view class="page">
+   <view class="page__hd">
+      <view class="page__title">个人便签</view>
+      <view class="page__desc">用文字记录每一天的精彩。</view>
+  </view>
+  <view class="page__bd">
+    <block wx:for="{{articleList}}">
+      <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <view class="weui-article__h2">{{item.title}}</view>
+            </view>
+        </view>
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">{{item.body}}</view>
+            </view>
+        </view>
+      </view>
+    </block>
+    <image src="../../images/write.png" bindtap="addArticle" class="addArticle"></image>
+  </view>
+</view>
+

@@ -16,6 +16,11 @@ Page({
         name: '场地预约',
         action: 'getPlace'
       },
+      {
+        id: 'article',
+        name: '个人便签',
+        action: 'article'
+      },
       // {
       //   id: 'school',
       //   name: '所在学校',
@@ -72,7 +77,11 @@ Page({
       }
     })
   },
-
+  article:function(){
+    wx.navigateTo({
+      url:"../article/article"
+    })
+  },
   setAim:function(){
     wx.navigateTo({
       url:"../aim/setAim"

@@ -1,0 +1,17 @@
+/* page/article/article.wxss */
+.weui-form-preview__label {
+  text-align-last: inherit;
+}
+.addArticle{
+  width: 150rpx;
+  height: 150rpx;
+  position: fixed;
+  right: 10rpx;
+  bottom: 120rpx;  
+}
+.weui-form-preview{
+  margin-bottom: 15rpx;
+}
+.weui-form-preview__hd{
+  text-align: left;
+}

@@ -9,10 +9,10 @@
 <view wx:else>
   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polygons="{{polygon}}" bindregionchange="regionchange" enable-overlooking show-scale show-location>
     <!-- 左侧显示 -->
-    <cover-view class="page__ft pfl">
-      <cover-view class="kind-list">
+    <cover-view wx:if="{{nowType}}" class="page__ft pfl">
+      <cover-view  class="kind-list">
         <!-- 结束按钮 -->
-        <cover-view class="kind-list__item pfr">
+        <cover-view  class="kind-list__item pfr">
           <cover-view bindtap="pauseRun" class="weui-flex kind-list__item-hd" style="padding: 0;">
             <cover-view class="weui-flex__item">
               <cover-image src="../../images/end.png" class="endImg"></cover-image>
@@ -36,7 +36,6 @@
     </cover-view>
   </map>
 </view>
-
 <view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}">
   <view class="weui-mask" bindtap="closeDialog"></view>
   <view class="weui-dialog__wrp" bindtap="closeDialog">

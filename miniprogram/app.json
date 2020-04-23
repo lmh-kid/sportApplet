@@ -4,6 +4,8 @@
     "page/group/creatGroup",
     "page/groupRes/groupRes",
     "page/group/group",
+    "page/article/article",
+    "page/article/writeArticle",
     "page/my/myCenter",
     "page/aim/setAim",
     "page/run/run",

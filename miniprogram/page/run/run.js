@@ -25,6 +25,7 @@ Page({
     speed:"0",  //速度
     showGrade:"0",  //分数
     showUseTime:"00:00:00", //所用时间
+    nowType:true,  // 状态是否显示i，修复结束按钮挡住弹出框问题
   },
 
   /**
@@ -180,6 +181,9 @@ Page({
                         flag: 2
                       },
                       success: res => {
+                        this.setData({
+                          nowType:false
+                        });
                         this.openDialog();
                       }
                     });
@@ -192,11 +196,17 @@ Page({
                         flag:2
                       },
                       success: res => {
+                        this.setData({
+                          nowType:false
+                        });
                         this.openDialog();
                       }
                     });
                   }
                 }else{
+                  this.setData({
+                    nowType:false
+                  });
                   this.openDialog();
                 }
                 wx.hideLoading();

@@ -24,6 +24,7 @@ Page({
     //绘制页面数据
     showGrade: "0",  //分数
     showUseTime: "00:00:00", //所用时间
+    nowType:true,  // 状态是否显示i，修复结束按钮挡住弹出框问题
   },
 
   /**
@@ -177,6 +178,9 @@ Page({
             success: res => {
               console.log('[云函数] [addHistory] ', res.result)
               if (res.result.errMsg == "collection.add:ok") {
+                this.setData({
+                  nowType:false
+                });
                 this.openDialog();
                 wx.hideLoading();
               } else {

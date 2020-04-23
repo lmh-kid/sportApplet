@@ -55,3 +55,6 @@ map{
   visibility:visible;
   opacity:1;
 }
+.weui-demo-dialog{
+  z-index: 999;
+}

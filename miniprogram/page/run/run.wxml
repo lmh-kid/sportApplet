@@ -9,7 +9,7 @@
 <view wx:else>
   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-scale show-location>
     <!-- 左侧显示 -->
-    <cover-view class="page__ft pfl">
+    <cover-view wx:if="{{nowType}}" class="page__ft pfl">
       <cover-view class="kind-list">
         <!-- 结束按钮 -->
         <cover-view class="kind-list__item pfr">
